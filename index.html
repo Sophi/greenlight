@@ -3,74 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenlight | Hardware Testing & Validation</title>
-    <meta name="description" content="Hardware testing consultancy helping companies catch issues before launch.">
+    <title>Greenlight | Hardware Validation & Design Engineering</title>
+    <meta name="description" content="Independent hardware validation and design engineering services. Get the greenlight before you ship.">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav">
+    <nav class="main-nav">
         <div class="nav-container">
-            <a href="#home" class="logo">GREENLIGHT</a>
+            <a href="#" class="logo">Greenlight</a>
             <div class="nav-links">
                 <a href="#services">Services</a>
                 <a href="#why">Why It Matters</a>
                 <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact" class="nav-cta">Get in Touch</a>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <header class="hero">
         <div class="hero-content">
-            <div class="label">Hardware Testing & Validation</div>
-            <h1>The external reality check before you miss something embarrassing at launch</h1>
-            <p class="hero-subtitle">We help hardware companies validate products before shipping—catching the issues that internal teams miss.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <div class="signal-indicator">
+                <span class="dot"></span>
+                <span class="pulse"></span>
+            </div>
+            <h1>Hardware validation & design engineering</h1>
+            <p class="hero-subtitle">We help hardware companies validate products before shipping. Catching the issues that internal teams miss.</p>
         </div>
-    </section>
+    </header>
 
     <section id="services" class="services">
         <div class="container">
-            <h2>Services</h2>
-            <div class="services-grid">
+            <div class="section-header">
+                <span class="section-label">What we offer</span>
+                <h2>Services</h2>
+            </div>
+            
+            <div class="service-grid">
                 <div class="service-card">
-                    <div class="service-number">01</div>
+                    <div class="card-number">01</div>
                     <h3>Product Launch Validation</h3>
-                    <p>Comprehensive testing before your product hits the market. We find the edge cases, compatibility issues, and design flaws that could derail your launch.</p>
+                    <ul>
+                        <li>End-to-end pre-launch testing and validation</li>
+                        <li>Hardware functionality verification</li>
+                        <li>Documentation review and usability testing</li>
+                        <li>Accessory and connectivity validation</li>
+                        <li>Customer onboarding experience testing</li>
+                    </ul>
                 </div>
+
                 <div class="service-card">
-                    <div class="service-number">02</div>
+                    <div class="card-number">02</div>
                     <h3>Hardware Design Engineering</h3>
-                    <p>Expert electrical engineering support for your product development. From schematic review to component selection and design optimization.</p>
+                    <ul>
+                        <li>Electrical engineering design services</li>
+                        <li>Product development consulting</li>
+                        <li>Design review and optimization</li>
+                    </ul>
                 </div>
+
                 <div class="service-card">
-                    <div class="service-number">03</div>
-                    <h3>Test Fixture Design</h3>
-                    <p>Custom test fixtures and automated testing solutions that scale with your production needs. Reliable, repeatable validation.</p>
+                    <div class="card-number">03</div>
+                    <h3>Test Infrastructure</h3>
+                    <ul>
+                        <li>Test fixture design and fabrication</li>
+                        <li>Testing procedure development</li>
+                        <li>Quality assurance systems design</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="why" class="why">
+    <section id="why" class="why-matters">
         <div class="container">
-            <h2>Why This Matters</h2>
             <div class="why-content">
                 <div class="why-text">
-                    <p>Your team is too close to the product. You've been living with its quirks for months. You know the workarounds. You've rationalized the compromises.</p>
-                    <p>But your customers won't. They'll notice immediately. They'll return it. They'll write reviews. They'll tweet about it.</p>
-                    <p>An external validation catches what internal testing misses:</p>
-                    <ul>
-                        <li>Real-world usage patterns you didn't anticipate</li>
-                        <li>Edge cases that seem "unlikely" but happen constantly</li>
-                        <li>Compatibility issues across different environments</li>
-                        <li>User experience problems that seem obvious in hindsight</li>
-                        <li>The small details that separate good products from great ones</li>
-                    </ul>
-                    <p class="emphasis">Better to catch it before launch than explain it after.</p>
+                    <span class="section-label">The reality check</span>
+                    <h2>Why independent validation matters</h2>
+                    <p>Internal QA teams are invaluable, but they're also close to the product. Too close, sometimes. They know the workarounds, they've internalized the quirks, and they might miss what a fresh user will stumble over immediately.</p>
+                    <p>That's where external validation comes in. We test with fresh eyes, real-world scenarios, and zero assumptions. We catch the documentation gap, the confusing setup step, the accessory that doesn't quite fit. The embarrassing details that slip through when everyone's too familiar with the product.</p>
+                    <p class="emphasis">Because fixing problems after launch costs more than catching them before.</p>
+                </div>
+                <div class="why-visual">
+                    <div class="validation-steps">
+                        <div class="step">
+                            <div class="step-icon red"></div>
+                            <span>Internal testing</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon orange"></div>
+                            <span>External validation</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon green"></div>
+                            <span>Greenlight</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,27 +109,41 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2>About</h2>
+            <div class="section-header">
+                <span class="section-label">How we work</span>
+                <h2>About</h2>
+            </div>
             <div class="about-content">
-                <p>Greenlight is led by Sophi Kravitz, an electrical engineer with over 15 years of experience in hardware design and testing. Previously Marketing Director at Hackaday, Sophi brings a unique combination of deep technical expertise and real-world understanding of how products succeed or fail in the market.</p>
-                <p>We work with hardware companies at all stages—from startups validating their first prototypes to established companies launching new product lines. Our approach is straightforward: thorough testing, clear documentation, honest feedback.</p>
+                <p class="about-intro">Before you launch your hardware product, you need to know it actually works—not just in the lab, but in the real world. Greenlight provides independent validation testing that goes beyond internal QA.</p>
+                <p>We test your hardware, documentation, accessories, and complete user experience to catch the embarrassing issues before your customers do. Think of us as your external reality check: we validate that your product delivers on its promises, your documentation is clear, and your customers can actually get started successfully.</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Let's Talk</h2>
             <div class="contact-content">
-                <p>Ready to validate your product before launch?</p>
-                <a href="mailto:hello@greenlight.place" class="contact-email">hello@greenlight.place</a>
+                <h2>Ready to launch with confidence?</h2>
+                <p>Let's talk about validating your next product.</p>
+                <a href="mailto:hello@greenlight.place" class="cta-button">Get in Touch</a>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 Greenlight. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">Greenlight</div>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#why">Why It Matters</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Greenlight. Hardware validation & design engineering.</p>
+            </div>
         </div>
     </footer>
 
