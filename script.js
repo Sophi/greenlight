@@ -4,15 +4,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            const navHeight = document.querySelector('.main-nav').offsetHeight;
+            const targetPosition = target.offsetTop - navHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
         }
     });
 });
 
-// Add animation on scroll for service cards
+// Add scroll effect to navigation
+let lastScroll = 0;
+const nav = document.querySelector('.main-nav');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    } else {
+        nav.style.boxShadow = 'none';
+    }
+    
+    lastScroll = currentScroll;
+});
+
+// Animate elements on scroll
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -27,15 +45,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe service cards
-document.querySelectorAll('.service-card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(card);
-});
-
-// Add stagger delay to service cards
-document.querySelectorAll('.service-card').forEach((card, index) => {
-    card.style.transitionDelay = `${index * 0.1}s`;
+// Observe service cards and other elements
+document.querySelectorAll('.service-card, .why-text, .about-content').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
 });
