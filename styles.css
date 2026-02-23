@@ -256,7 +256,7 @@ h3 {
 }
 
 .why-text ul li::before {
-    content: '→';
+    content: '•';
     position: absolute;
     left: 0;
     color: var(--green-primary);
